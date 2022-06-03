@@ -31,7 +31,7 @@
       const formData = Object.fromEntries(new FormData(form).entries());
       const resp = await API.login(formData);
       if (!resp.code) {
-        location.href = "/index.html";
+        location.href = "./index.html";
       } else {
         loginIdValidator.p.innerText = "账号或密码错误";
         loginPwdValidator.input.value = "";

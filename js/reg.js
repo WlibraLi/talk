@@ -53,7 +53,7 @@
       const formData = Object.fromEntries(new FormData(form).entries());
       const resp = await API.reg(formData);
       if (!resp.code) {
-        location.href = "/login.html";
+        location.href = "./login.html";
       }
     }
   };

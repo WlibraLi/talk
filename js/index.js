@@ -13,7 +13,7 @@
   const user = resp.data; //拿到用户信息
   if (resp.code) {
     alert(resp.msg + "请重新登陆");
-    location.href = "/login.html";
+    location.href = "./login.html";
     return;
   }
   // 初始化界面
@@ -46,7 +46,7 @@
     //关闭窗口自动注销该账号
     dom.close.onclick = function () {
       API.loginOut();
-      location.href = "/login.html";
+      location.href = "./login.html";
     };
     //注册表单提交事件
     dom.form.onsubmit = async function (e) {
